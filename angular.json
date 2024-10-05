@@ -37,7 +37,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+               "src/js/inject.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -104,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
