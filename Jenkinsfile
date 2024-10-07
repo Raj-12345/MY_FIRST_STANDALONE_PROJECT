@@ -23,7 +23,7 @@ pipeline {
             steps {
                 withAWS(credentials: 'aws-user-s3-id', region: 'ap-south-1') {
                     // Upload all files in the dist/ folder to S3
-                    s3Upload(acl: 'Private', bucket: 'myangularjenkinesbucket ', includePathPattern: '**/*', workingDir: 'dist/your-angular-project-name/')
+                    s3Upload(acl: 'Public', bucket: 'myangularjenkinesbucket ', includePathPattern: '**/*', workingDir: 'dist/my-first-standalone-project/')
                 }
             }
         }
