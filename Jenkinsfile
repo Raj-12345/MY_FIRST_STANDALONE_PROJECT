@@ -14,7 +14,7 @@ pipeline {
         stage('Install Depedency') {
             steps {
                 echo '--------------------------------Start npm install -------------------------'
-                sh 'npm install --prod'
+                sh 'npm install '
                 echo '--------------------------------Ended npm install-------------------------'
             }
         }
