@@ -30,7 +30,7 @@ pipeline {
                 echo '-------------------------------Start S3 Upload---------------------------'
                 withAWS(credentials: 'aws-user-s3-id', region: 'ap-south-1') {
                     // Upload all files in the dist/ folder to S3
-                    s3Upload(bucket: 'myangularjenkinesbucket', includePathPattern: '**/*', workingDir: 'dist/my-first-standalone-project/')
+                    s3Upload(bucket: 'myangularjenkinesbucket1', includePathPattern: '**/*', workingDir: 'dist/my-first-standalone-project/')
                 }
                 echo '-------------------------------Ended S3 Upload---------------------------'
             }
