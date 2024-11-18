@@ -13,4 +13,8 @@ export class UserComponent {
  @Input('userName') userName:string='';
  @Input('userAvatar') userAvatar:string='';
 
+ get imagePath()
+ {
+  return 'assets/users/' + this.userAvatar;
+ }
 }

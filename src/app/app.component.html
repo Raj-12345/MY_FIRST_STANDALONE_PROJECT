@@ -1,8 +1,13 @@
 <app-header />
 <main>
   <ul id="users">
-    <li *ngFor="let user of users ">
-      <app-user [userId]="user.id" [userName]="user.name"  [userAvatar]="user.avatar" />
+    <li *ngFor="let user of users">
+      <app-user
+        [userId]="user.id"
+        [userName]="user.name"
+        [userAvatar]="user.avatar"
+      />
     </li>
   </ul>
+  <h1>Hello</h1>
 </main>
